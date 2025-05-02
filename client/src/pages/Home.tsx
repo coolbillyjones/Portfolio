@@ -1,5 +1,5 @@
 import RetroCard from "@/components/RetroCard";
-import AsciiArt, { developerAscii, keyboardAscii } from "@/components/AsciiArt";
+import AsciiArt, { developerAscii, diagonalKeyboardAscii } from "@/components/AsciiArt";
 import VisitorCounter from "@/components/VisitorCounter";
 import { Link } from "wouter";
 
@@ -47,7 +47,7 @@ const Home = () => {
       <section className="mb-8 overflow-hidden">
         <RetroCard className="bg-[var(--retro-silver)] p-4">
           <pre className="text-[var(--retro-navy)] text-center text-xs md:text-sm font-mono whitespace-pre overflow-x-auto">
-            {keyboardAscii}
+            {diagonalKeyboardAscii}
           </pre>
           <div className="text-center mt-2 font-['VT323']">CODING IN PROGRESS</div>
         </RetroCard>
