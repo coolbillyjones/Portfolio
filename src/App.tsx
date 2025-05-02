@@ -24,6 +24,8 @@ function Router() {
   );
 }
 
+const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
