@@ -53,6 +53,65 @@ const Home = () => {
         </RetroCard>
       </section>
       
+      {/* Featured Projects Section */}
+      <section className="mb-8">
+        <RetroCard title="FEATURED PROJECTS">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Project 1 */}
+            <div className="pixel-border p-3 bg-white">
+              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Minesweeper Game</h4>
+              <div className="flex items-start">
+                <div className="mr-2 pixel-border-inset bg-[var(--retro-silver)] p-1 text-center">
+                  <pre className="text-xs text-[var(--retro-navy)]">
+                    ┌───┬───┬───┐
+                    │ 1 │   │ 1 │
+                    ├───┼───┼───┤
+                    │ 1 │ 1 │ 1 │
+                    ├───┼───┼───┤
+                    │ * │ 1 │   │
+                    └───┴───┴───┘
+                  </pre>
+                </div>
+                <div>
+                  <p className="text-sm mb-2">Classic Minesweeper game with multiple difficulty levels.</p>
+                  <a href="#" className="text-blue-700 underline text-sm">
+                    Play Game &gt;&gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 2 */}
+            <div className="pixel-border p-3 bg-white">
+              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Weather Dashboard</h4>
+              <div className="flex items-start">
+                <div className="mr-2 pixel-border-inset bg-[var(--retro-silver)] p-1 text-center">
+                  <pre className="text-xs text-[var(--retro-navy)]">
+                    \\\\  //
+                   ---- ☼ ----
+                     //  \\\\
+                  </pre>
+                </div>
+                <div>
+                  <p className="text-sm mb-2">Weather application with forecast data from a public API.</p>
+                  <a href="#" className="text-blue-700 underline text-sm">
+                    View Project &gt;&gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-4">
+            <Link href="/projects">
+              <a className="pixel-border bg-[var(--retro-purple)] text-white font-['VT323'] p-2 inline-block hover:bg-[var(--retro-magenta)]">
+                VIEW ALL PROJECTS
+              </a>
+            </Link>
+          </div>
+        </RetroCard>
+      </section>
+
       {/* Quick links to other sections */}
       <div className="text-center mb-8">
         <div className="pixel-border bg-[var(--retro-silver)] p-3 inline-block">
