@@ -14,7 +14,7 @@ function Router() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={Home} />
+        <Route path="/Portfolio" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
@@ -23,8 +23,6 @@ function Router() {
     </Layout>
   );
 }
-
-const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
 
 function App() {
   return (
