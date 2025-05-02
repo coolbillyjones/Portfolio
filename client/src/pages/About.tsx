@@ -21,7 +21,8 @@ const About = () => {
           <div className="text-center">
             <AsciiArt 
               art={workingDeveloperAscii} 
-              bgColor="bg-[var(--retro-navy)]" 
+              bgColor="bg-[var(--retro-silver)]" 
+              textColor="text-[var(--retro-navy)]"
               className="mb-2" 
             />
             

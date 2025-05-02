@@ -1,5 +1,5 @@
 import RetroCard from "@/components/RetroCard";
-import AsciiArt, { developerAscii, helicopterAscii } from "@/components/AsciiArt";
+import AsciiArt, { developerAscii, keyboardAscii } from "@/components/AsciiArt";
 import VisitorCounter from "@/components/VisitorCounter";
 import { Link } from "wouter";
 
@@ -21,8 +21,8 @@ const Home = () => {
                 <div className="w-full md:w-1/3 text-center">
                   <AsciiArt 
                     art={developerAscii} 
-                    bgColor="bg-black" 
-                    textColor="text-[var(--retro-cyan)]" 
+                    bgColor="bg-[var(--retro-silver)]" 
+                    textColor="text-[var(--retro-navy)]" 
                     caption="ASCII Developer" 
                   />
                 </div>
@@ -43,12 +43,13 @@ const Home = () => {
         </div>
       </section>
       
-      {/* ASCII Art helicopter section */}
+      {/* ASCII Art keyboard section */}
       <section className="mb-8 overflow-hidden">
-        <RetroCard className="bg-black p-4">
-          <pre className="text-[var(--retro-cyan)] text-center text-xs md:text-sm font-mono whitespace-pre overflow-x-auto">
-            {helicopterAscii}
+        <RetroCard className="bg-[var(--retro-silver)] p-4">
+          <pre className="text-[var(--retro-navy)] text-center text-xs md:text-sm font-mono whitespace-pre overflow-x-auto">
+            {keyboardAscii}
           </pre>
+          <div className="text-center mt-2 font-['VT323']">CODING IN PROGRESS</div>
         </RetroCard>
       </section>
       

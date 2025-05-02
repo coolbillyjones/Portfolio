@@ -45,7 +45,7 @@ const ProjectCard = ({
               )}
             </div>
           </div>
-          <div className="scanlines pixel-border-inset bg-black p-1">
+          <div className="scanlines pixel-border-inset bg-[var(--retro-silver)] p-1">
             <div className="bg-[var(--retro-silver)] pixel-border-inset p-2">
               <pre className="text-xs text-[var(--retro-navy)] font-mono">
                 {asciiArt}
