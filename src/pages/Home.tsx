@@ -1,6 +1,6 @@
 import RetroCard from "@/components/RetroCard";
 import AsciiArt, { developerAscii, serverRackAscii } from "@/components/AsciiArt";
-import VisitorCounter from "@/components/VisitorCounter";
+import headshotImage from '../../assets/headshot.JPG';
 import { Link } from "wouter";
 
 const Home = () => {
@@ -12,19 +12,20 @@ const Home = () => {
             <RetroCard title="WELCOME!">
               <div className="flex flex-col md:flex-row items-center">
                 <div className="w-full md:w-2/3 mb-4 md:mb-0 md:mr-4">
-                  <p className="mb-2">Hello, visitor! Welcome to my retro-styled developer portfolio.</p>
-                  <p className="mb-4">I create web applications and coding projects with a passion for clean code and user experience.</p>
+                  <p className="mb-2">Hi! Welcome to my portfolio. Here you can find my projects, interests, and what I'm currently working on.</p>
+                  <p className="mb-4">I'm passionate about machine learning algorithms and am currently aiming to acquire a student researcher position in a lab where I can develop and apply my knowledge.</p>
                   <div className="blink text-[var(--retro-magenta)] font-bold">
                     *** Site under construction! ***
                   </div>
                 </div>
                 <div className="w-full md:w-1/3 text-center">
-                  <AsciiArt 
+                  <img src = ''/>
+                  {/* <AsciiArt 
                     art={developerAscii} 
                     bgColor="bg-[var(--retro-silver)]" 
                     textColor="text-[var(--retro-navy)]" 
                     caption="ASCII Developer" 
-                  />
+                  /> */}
                 </div>
               </div>
             </RetroCard>
@@ -33,11 +34,10 @@ const Home = () => {
           <div className="col-span-1">
             <RetroCard title="LATEST UPDATES">
               <ul className="list-disc list-inside">
-                <li className="mb-2">Added new Minesweeper project [06/15/23]</li>
-                <li className="mb-2">Updated portfolio design [05/22/23]</li>
-                <li className="mb-2">Started GitHub Pages deployment [05/01/23]</li>
+                <li className="mb-2">Began an introductory workshop in Geospatial Raster and Vector Data with Python [07/10/25]</li>
+                <li className="mb-2">Completed the first course in Andrew Ng's Machine Learning Spcecialization [07/07/25]</li>
+                <li className="mb-2">Started GitHub Pages deployment [05/01/25]</li>
               </ul>
-              <VisitorCounter />
             </RetroCard>
           </div>
         </div>

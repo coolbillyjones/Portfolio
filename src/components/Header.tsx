@@ -17,7 +17,7 @@ const Header = () => {
         <h1 className="text-xl md:text-2xl font-['VT323'] block md:hidden">CODE PORTFOLIO</h1>
       </div>
       
-      <Marquee text="★ Welcome to my retro-styled developer portfolio! ★ Check out my projects! ★ Contact me for collaboration! ★ " />
+      <Marquee text="★ Welcome to my developer portfolio! ★ Check out my projects! ★ Contact me for collaboration! ★ " />
     </header>
   );
 };
