@@ -1,6 +1,6 @@
 import RetroCard from "@/components/RetroCard";
 import AsciiArt, { developerAscii, serverRackAscii } from "@/components/AsciiArt";
-import headshotImage from '../../assets/headshot.JPG';
+import headshotImage from '../assets/headshot.jpg';
 import { Link } from "wouter";
 
 const Home = () => {
@@ -15,11 +15,11 @@ const Home = () => {
                   <p className="mb-2">Hi! Welcome to my portfolio. Here you can find my projects, interests, and what I'm currently working on.</p>
                   <p className="mb-4">I'm passionate about machine learning algorithms and am currently aiming to acquire a student researcher position in a lab where I can develop and apply my knowledge.</p>
                   <div className="blink text-[var(--retro-magenta)] font-bold">
-                    *** Site under construction! ***
+                    *** New projects always being added! ***
                   </div>
                 </div>
                 <div className="w-full md:w-1/3 text-center">
-                  <img src = ''/>
+                  <img src = {headshotImage} alt='Headshot' className="rounded w-48 h-48"/>
                   {/* <AsciiArt 
                     art={developerAscii} 
                     bgColor="bg-[var(--retro-silver)]" 

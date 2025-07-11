@@ -55,12 +55,12 @@ const Projects = () => {
         
         <div className="text-center mt-6">
           <a 
-            href="https://github.com" 
+            href="https://github.com/coolbillyjones" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block pixel-border bg-[var(--retro-purple)] text-white font-['VT323'] p-2 hover:bg-[var(--retro-magenta)]"
           >
-            VIEW ALL PROJECTS ON GITHUB
+            View the code to all my projects on my Github
           </a>
         </div>
       </RetroCard>
