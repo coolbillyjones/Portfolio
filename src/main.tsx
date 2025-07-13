@@ -3,7 +3,7 @@ import App from "./App";
 import "./index.css";
 
 // Set page title
-document.title = "Dev Portfolio | 90s Style";
+document.title = "Portfolio | Joseph Gonzalez";
 
 // Add meta description
 const metaDescription = document.createElement('meta');
