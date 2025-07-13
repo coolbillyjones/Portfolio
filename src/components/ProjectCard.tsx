@@ -22,7 +22,7 @@ const ProjectCard = ({
     return (
       <div className="mb-8">
         <h3 className="font-['VT323'] text-[var(--retro-purple)] text-xl">★ FEATURED PROJECT ★</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
           <div className="md:col-span-2 pixel-border-inset p-3 bg-[var(--retro-silver)]">
             <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-2">{title}</h4>
             <p className="mb-3">{description}</p>
@@ -30,9 +30,10 @@ const ProjectCard = ({
               {projectLink && (
                 <a 
                   href={projectLink} 
+                  target="_blank"
                   className="pixel-border bg-[var(--retro-navy)] text-white font-['VT323'] p-1 text-sm hover:bg-[var(--retro-purple)]"
                 >
-                  PLAY GAME
+                  View Project
                 </a>
               )}
               {codeLink && (
@@ -45,7 +46,7 @@ const ProjectCard = ({
               )}
             </div>
           </div>
-          <div className="scanlines pixel-border-inset bg-[var(--retro-silver)] p-1">
+          {/* <div className="scanlines pixel-border-inset bg-[var(--retro-silver)] p-1">
             <div className="bg-[var(--retro-silver)] pixel-border-inset p-2">
               <pre className="text-xs text-[var(--retro-navy)] font-mono">
                 {asciiArt}
@@ -56,31 +57,35 @@ const ProjectCard = ({
                 {title.toUpperCase()} v1.0
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
   }
 
   return (
-    <div className="pixel-border p-3 bg-white">
-      <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">{title}</h4>
-      <div className="flex items-start">
+  <div className="pixel-border p-3 bg-white">
+    <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">{title}</h4>
+    <div className="flex items-start">
+      {/* Conditionally render ASCII art only if asciiArt exists */}
+      {asciiArt && (
         <div className="mr-2 pixel-border-inset bg-[var(--retro-silver)] p-1 text-center">
-          <pre className="text-xs text-[var(--retro-navy)]">
+          <pre className="text-xs text-[var(--retro-navy)] whitespace-pre">
             {asciiArt}
           </pre>
         </div>
-        <div>
-          <p className="text-sm mb-2">{description}</p>
-          {projectLink && (
-            <a href={projectLink} className="text-blue-700 underline text-sm">
-              View Project &gt;&gt;
-            </a>
-          )}
-        </div>
+      )}
+
+      <div>
+        <p className="text-sm mb-2">{description}</p>
+        {projectLink && (
+          <a href={projectLink} className="text-blue-700 underline text-sm" target="_blank">
+            View Project &gt;&gt;
+          </a>
+        )}
       </div>
     </div>
+  </div>
   );
 };
 

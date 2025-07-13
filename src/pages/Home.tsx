@@ -51,21 +51,10 @@ const Home = () => {
             <div className="pixel-border p-3 bg-white">
               <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Minesweeper Game</h4>
               <div className="flex items-start">
-                <div className="min-w-[80px] mr-2 pixel-border-inset bg-[var(--retro-silver)] p-1 text-center">
-                  <pre className="text-[0.6rem] text-[var(--retro-navy)] font-mono whitespace-pre leading-tight">
-┌─┬─┬─┐
-│1│ │1│
-├─┼─┼─┤
-│1│1│1│
-├─┼─┼─┤
-│*│1│ │
-└─┴─┴─┘
-                  </pre>
-                </div>
                 <div>
-                  <p className="text-sm mb-2">Classic Minesweeper game with multiple difficulty levels.</p>
-                  <a href="#" className="text-blue-700 underline text-sm">
-                    Play Game &gt;&gt;
+                  <p className="text-sm mb-2">Classic Minesweeper game written in C++.</p>
+                  <a href="https://github.com/coolbillyjones/Minesweeper" className="text-blue-700 underline text-sm" target = "_blank">
+                    View Project &gt;&gt;
                   </a>
                 </div>
               </div>
@@ -73,18 +62,11 @@ const Home = () => {
             
             {/* Project 2 */}
             <div className="pixel-border p-3 bg-white">
-              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Weather Dashboard</h4>
+              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Backend Intern At Florida Community Innovatio</h4>
               <div className="flex items-start">
-                <div className="min-w-[80px] mr-2 pixel-border-inset bg-[var(--retro-silver)] p-1 text-center">
-                  <pre className="text-[0.6rem] text-[var(--retro-navy)] font-mono whitespace-pre leading-tight">
- \\\\  //
----- ☼ ----
-  //  \\\\
-                  </pre>
-                </div>
                 <div>
-                  <p className="text-sm mb-2">Weather application with forecast data from a public API.</p>
-                  <a href="#" className="text-blue-700 underline text-sm">
+                  <p className="text-sm mb-2">As a backend intern I fix bugs, develop new features, and cleanse the data being displayed on the sight. For a more in depth description, check the projects tab!</p>
+                  <a href="https://www.floridaresourcemap.org/" className="text-blue-700 underline text-sm" target="_blank">
                     View Project &gt;&gt;
                   </a>
                 </div>
