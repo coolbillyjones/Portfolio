@@ -14,7 +14,7 @@ const Contact = () => {
                 <div className="pixel-border bg-[var(--retro-silver)] p-1 mr-2 w-8 h-8 flex items-center justify-center">
                   <span className="text-[var(--retro-navy)]">@</span>
                 </div>
-                <a href="mailto:example@email.com" className="text-blue-700 underline">josephgcoll@gmail.com</a>
+                <a href="mailto:example@email.com" className="text-blue-700 underline">jgonzalez12@ufl.edu</a>
               </div>
               
               <div className="flex items-center">

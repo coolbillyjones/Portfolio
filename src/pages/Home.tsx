@@ -62,7 +62,7 @@ const Home = () => {
             
             {/* Project 2 */}
             <div className="pixel-border p-3 bg-white">
-              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Backend Intern At Florida Community Innovatio</h4>
+              <h4 className="font-['VT323'] text-[var(--retro-navy)] text-lg mb-1">Backend Intern At Florida Community Innovation</h4>
               <div className="flex items-start">
                 <div>
                   <p className="text-sm mb-2">As a backend intern I fix bugs, develop new features, and cleanse the data being displayed on the sight. For a more in depth description, check the projects tab!</p>
